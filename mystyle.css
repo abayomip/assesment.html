@@ -202,11 +202,14 @@ img {
   
 
  /** code by webdevtrick (https://webdevtrick.com) **/ 
-*{
+ *{
   margin: 0;
   padding: 0;
   text-decoration: none;
   font-family: "montserrat";
+}
+body{
+  background: #333;
 }
 .middle{
   position: absolute;
@@ -216,7 +219,7 @@ img {
 }
 .card{
   cursor: pointer;
-  width: 380px;
+  width: 360px;
   height: 500px;
 }
 .front,.back{
@@ -239,7 +242,7 @@ img {
   transform: perspective(600px) rotateY(180deg);
 }
 .back-content{
-  color: black;
+  color: #2c3e50;
   text-align: center;
   width: 100%;
 }
@@ -258,7 +261,7 @@ img {
   border-radius: 50%
 }
 .sm a:hover{
-  background: black;
+  background: #2c3e50;
   color: white;
 }
 .card:hover > .front{
