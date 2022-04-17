@@ -2,12 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
+}
+body{
+  background: none;
+  font-family: 'Kanit', sans-serif;
 }
 
-body {
-    background: greenyellow;
-    font-family: 'Kanit', sans-serif;
-}
+h1 {
+  color: white;
+  }
+
+  .myclass {
+    color: black;
+   }
+   
+
+h2 {
+    color: white;
+  }
+
+p {
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+
+  }
 
 .header {
     position: relative;
@@ -16,20 +36,15 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background: purple;
+    background: black;
     padding: 15px;
     transition: 0.3s;
     
 }
-
-main h1 a {
-    /*font-weight: bold;
-    margin: 10px; */
-   }
    
 img {
     display: block;
-    max-width: 30%;
+    max-width: 100%;
     max-height: min-content;
 }
 
@@ -57,7 +72,7 @@ img {
      ul li a {
         text-decoration: none;
         display: block;
-        color: blue;
+        color: black;
         font-weight: bold;
         font-size: 20px;
         line-height: 1;
@@ -67,7 +82,7 @@ img {
      }
  
      ul li a:hover {
-        color: red;
+        color: white;
         box-shadow: 0 0 5px pink;
         text-shadow: pink;
         }
@@ -77,6 +92,7 @@ img {
             padding: 35px;
             box-shadow: 0 1.3px 0 plum(255, 255, 255, 0.1);
         }
+
 
         .shownav {
             position: relative;
@@ -161,9 +177,131 @@ img {
         position: fixed;
         top: 0;
         right: -300px;
-        background: purple;
+        background: black;
         width: 300px;
         height: 100%;
         padding-top: 65px;
 
     }
+    
+    /** my portfolio **/ 
+    input {
+        display: table;
+        width: 50%;
+        min-height: 50px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        color: #fff;
+        background-color: white;
+        }
+        input::placeholder {
+        color: black;
+        }
+        
+       
+  
+
+ /** code by webdevtrick (https://webdevtrick.com) **/ 
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "montserrat";
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.card{
+  cursor: pointer;
+  width: 380px;
+  height: 500px;
+}
+.front,.back{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+.front img{
+  height: 100%;
+ 
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  background: #f1f1f1;
+  transform: perspective(600px) rotateY(180deg);
+}
+.back-content{
+  color: black;
+  text-align: center;
+  width: 100%;
+}
+.sm{
+  margin: 20px 0;
+}
+.sm a{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%
+}
+.sm a:hover{
+  background: black;
+  color: white;
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+
+  .footer {
+    position: absolute;
+    top: 100%;
+}
+
+.columns {
+  float: left;
+  width: 25%;
+  padding: 12px;
+  min-height: 350px;
+  border: 1px solid;
+  text-align: centre;
+  
+}
+
+.blog:after {
+  position: sticky;
+  content: "";
+  display: table;
+  clear:both;
+  
+
+}
+
+@media screen and (max-width: 768px) {
+  .columns{
+    width: 100%;
+
+  }
+}
+
+.banner-area {
+  width: 100%;
+  height: 100vh;
+  background: url(background.jpg)
+
+}
